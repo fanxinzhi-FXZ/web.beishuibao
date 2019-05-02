@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Exchange from '@/components/exchange/exchange.vue'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+	hashbang: true,
+	history: true,
+	routes: [
+		{ path: "/", redirect: "/exchange" },
+	  { path: '/exchange', name: 'Exchange', component: Exchange },
+	]
 })
