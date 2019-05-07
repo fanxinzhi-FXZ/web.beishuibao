@@ -1,6 +1,6 @@
 <template>
 	<div id="exchang">
- 					12313
+ 		<div class="title">卡劵信息填写</div>
 	</div>
 </template>
 

@@ -1,0 +1,15 @@
+#exchang {
+	
+}
+#exchang .title{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 33px;
+	font-size:30rpx;
+	color:#333333;
+	background:url("https://www.beishuibao.com/web_pic/program/icon_line.png") left 20px center no-repeat;
+	background-size:2px 11px;
+
+}
+ 
