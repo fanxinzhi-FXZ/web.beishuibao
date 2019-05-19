@@ -10,15 +10,18 @@
 				</swiper>
 			</div>
 		</div>
-
 		<div class="banner">
 			<div class="banner-swiper">
-				<swiper v-if="slideData.length > 1" :options="swiperOptions_banner">
-						<swiper-slide v-for="(item,index) in slideData" :key="index">
-								<img :src="item.bannerImg" alt="">
+				<swiper v-if="bannerData.length > 1" :options="swiperOptions_banner"  ref="bannerSwiper">
+						<swiper-slide v-for="(item,index) in bannerData" :key="index">
+							<div class="banner-item" :style="{background:(backgroundItems[index])}">
+								<p class="item-top">{{item.name}}</p>
+								<p class="item-center">￥{{item.price - item.reduced_price}}</p>
+								<p class="item-bottom" v-show="item.reduced_price != 0"> <del>￥{{item.price}}</del> </p>
+							</div>
 						</swiper-slide>
-						<div class="swiper-pagination" slot="pagination"></div>
 				</swiper>
+				<div class="swiper-pagination swiper-pagination1" slot="pagination1"></div>
 			</div>
 		</div>
 
@@ -47,7 +50,7 @@
 						</div>
 					</swiper-slide>
 				</swiper>
-				<div class="swiper-pagination" slot="pagination"></div>
+				<div class="swiper-pagination swiper-pagination2" slot="pagination2"></div>
 			</div>
 		</div>
  		<div class="common">
