@@ -82,9 +82,7 @@ var utils = (function(){
 		extand: function(data){
 		    
             data = data || {};
-            data['av'] = '3.0.0';
-            data['cv'] = '2.0.0';
-            data['client'] = (client.android ? 'alipay-android' : ( client.iOS ? 'alipay-ios' : 'alipay-other' ));
+
             return data;
 		},
 		
@@ -93,9 +91,7 @@ var utils = (function(){
 	        var params = [];
 	        
         	data = data || {};
-        	data['av'] = '3.0.0';
-        	data['cv'] = '2.0.0';
-        	data['client'] = (client.android ? 'alipay-android' : ( client.iOS ? 'alipay-ios' : 'alipay-other' ));
+
 	        
 	        for(var key in data){
 	            params.push(key + '=' + encodeURIComponent(data[key]));

@@ -26,7 +26,7 @@ var _default = (function() {
 	        		}, function(data){
 	        		 	console.log(data)
 	        		 	if(data.errcode == 0){
-	        		 		vm.$router.push('/fill')
+	        		 		vm.$router.push('/fill?data=' + JSON.stringify(data.data))
 	        		 	}else {
 	        		 		Toast.show(data.errdesc, 3000)
 	        		 	}
