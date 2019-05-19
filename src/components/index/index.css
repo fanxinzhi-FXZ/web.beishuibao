@@ -1,8 +1,141 @@
+.header .header-swiper{
+  background: #fff;
+  width:100%;
+  height:155px;
+}
+.header .header-swiper img{
+  width:100%;
+  height:155px;
+}
+.banner{
+  width:80%;
+  margin:30px 10%;
+}
+.banner .banner-swiper{
+  background: #fff;
+  width:100%;
+  height:120px;
+}
+.banner .banner-swiper img{
+  width:100%;
+  height:100px;
+}
+.banner .banner-swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height:140px;
+    margin-top:20px;
+}
+.nav-product{
+  width:100%;
+}
+.nav-product .nav-product-swiper{
+  background: #fff;
+  width:90%;
+  margin:10px 5%;
+}
+.nav-product .nav-product-swiper .swiper-pagination{
+  position:inherit !important;
+}
+.nav-product .nav-product-swiper .swiper-pagination-bullet{
+  margin:0 5px;
+}
+.nav-product  .title{
+  display: block;
+  height: 50px;
+  font-size: 15px;
+  color: #333333;
+}
+.nav-product  .title .left{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  background: url("https://www.beishuibao.com/web_pic/program/icon_line.png") left 15px center no-repeat;
+  background-size: 2px 11px;
+}
+.nav-product  .title .right{
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 26px;
+  background: url("https://www.beishuibao.com/web_pic/program/icon_down1.png") right 15px center no-repeat;
+  background-size: 6px 11px;
+}
+
+.nav-product  .content {
+  margin: 0px 10rpx;
+  background: #ffffff;
+  box-shadow: 3rpx 0px 28rpx 0px
+		rgba(229, 229, 229, 0.63);
+	border-radius: 6rpx;
+}
+.nav-product .seed{
+  padding: 0px 14px;
+}
+.nav-product .seed .head{
+  display: block;
+  height: 47px;
+}
+.nav-product .seed .head .icon {
+  float: left;
+  width: 36px;
+  height: 36px;
+  margin: 4px 5px 0px 0px;
+}
+.nav-product .seed .head .name {
+  float: left;
+  height: 47px;
+  line-height: 47px;
+  text-align: left;
+  font-size: 14px;
+  color: #494949;
+}
+.nav-product .seed .sige {
+  display: block;
+  height: 30px;
+  font-size: 14px;
+  color: #333333;
+}
+.nav-product .seed .sige .sigeleft{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 4px;
+}
+.nav-product .seed .sige .sigeright{
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 8px;
+}
+.nav-product .seed .son {
+  display: block;
+  overflow: hidden;
+  font-size: 12px;
+  color: #333333;
+}
+.nav-product .seed .son:nth-of-type(odd){
+  background: #fafafa;
+}
+.nav-product .seed .son .sonleft{
+  display: block;
+  margin-right: 60px;
+  line-height: 30px;
+  padding-left: 4px;
+}
+.nav-product .seed .son .sonright{
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 8px;
+}
 /* 常见问题 */
-.index .common {
+.common {
 
 }
-.index .common .title{
+.common .title{
   display: block;
   height: 50px;
   line-height: 50px;
@@ -12,20 +145,20 @@
   background: url("https://www.beishuibao.com/web_pic/program/icon_line.png") left 15px center no-repeat;
   background-size: 2px 11px;
 }
-.index .common .content{
+.common .content{
   display: block;
 	background-color: #ffffff;
-	box-shadow: 1.5px 0px 14.5px 0px 
+	box-shadow: 1.5px 0px 14.5px 0px
 		rgba(229, 229, 229, 0.63);
 	border-radius: 6px;
   margin: 0px 10px;
   padding: 6px 20px 20px 15px;
 }
-.index .common .content .item {
+.common .content .item {
   display: block;
   padding-top: 18px;
 }
-.index .common .content .item .subtitle{
+.common .content .item .subtitle{
   display: block;
   padding-left: 15px;
   font-size: 14px;
@@ -33,19 +166,19 @@
   background: url("https://www.beishuibao.com/web_pic/program/icom_dot3.png") left center no-repeat;
   background-size: 10px 10px;
 }
-.index .common .content .item .subtitle .num {
+.common .content .item .subtitle .num {
   font-size: 14px;
   display: inline;
   color:#3756b4;
 }
-.index .common .content .item .text {
+.common .content .item .text {
   display: block;
   padding-left: 15px;
   line-height: 18px;
   font-size: 12px;
   color: #494949;
 }
-.index .common .content .item .text .store{
+.common .content .item .text .store{
   font-weight: bold;
   text-decoration: underline ;
 }
