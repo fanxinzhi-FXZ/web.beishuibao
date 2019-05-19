@@ -4,6 +4,7 @@ import Exchange from '@/components/exchange/exchange.vue'
 import Fill from '@/components/fill/fill.vue'
 import Index from '@/components/index/index.vue'
 import Return from '@/components/return/return.vue'
+import Confirm from '@/components/confirm/confirm.vue'
 
 Vue.use(Router)
 
@@ -15,6 +16,7 @@ export default new Router({
 	  	{ path: '/exchange', name: 'Exchange', component: Exchange },
 	  	{ path: '/fill', name: 'Fill', component: Fill },
 	  	{ path: '/index', name: 'Index', component: Index },
-	  	{ path: '/return', name: 'Return', component: Return }
+	  	{ path: '/return', name: 'Return', component: Return },
+	  	{ path: '/confirm', name: 'Confirm', component: Confirm }
 	]
 })

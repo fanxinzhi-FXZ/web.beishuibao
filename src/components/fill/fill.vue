@@ -86,10 +86,10 @@
 		  </div>
 		
 		  <!-- 代理人手机号码 -->
-		<div class="agent">
+		<!--<div class="agent">
 		    <span class="title">代理人手机号码</span>
 		    <span class="agentphone"><input class="input" type="number" maxlength="11" placeholder="请输入代理人手机号码" v-model="agentPhone" ></input></span>
-		</div>
+		</div>-->
 		
 		  <!-- 底部按钮及金额 -->
 		<div class="bottom"> 

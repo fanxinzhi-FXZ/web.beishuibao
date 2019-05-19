@@ -18,9 +18,6 @@ var _default = (function() {
                  },
                  {
                    "bannerImg": "https://www.beishuibao.com/web_pic/program/banner2.png",
-                 },
-                 {
-                   "bannerImg": "https://www.beishuibao.com/web_pic/program/banner2.png",
                  }
               ],
               swiperOptions:{
@@ -39,7 +36,7 @@ var _default = (function() {
                 // centeredSlides: true, //设定为true时，活动块会居中，而不是默认状态下的居左。
                 // spaceBetween:10,
                 // slidesPerView: 1.7,
-                loopedSlides :2,
+                loopedSlides :1,
                 observer: true,
                 observeParents: true
               },

@@ -9,13 +9,24 @@ var _default = (function() {
         name: 'fill',
         mounted: function() {
       		var data = this.$route.query.data;
-      		console.log(JSON.parse(data))
+      		var order = sessionStorage.getItem('order');
+      		var userInfo = sessionStorage.getItem('userInfo');
+      		var orderItems = JSON.parse(order);
+      		var optionsData = JSON.parse(userInfo);
+
       		var query = JSON.parse(data)
-      		this.cardId = query.card_id;
-      		this.buyBlanId = query.product_infor.id;
-      		this.totalPrice = (query.product_infor.price - query.product_infor.reduced_price) || 0;
-//    		this.ic_name = query.product_infor.name;
-//    		this.ic_card = query.product_infor.id
+      		this.cardId = query.card_id || optionsData.card_id;
+      		this.buyBlanId = query.product_infor.id || orderItems.product_id;
+      		this.totalPrice = (query.product_infor.price - query.product_infor.reduced_price) || orderItems.price;
+
+      		this.flightNumber = optionsData.flight_number || '';
+      		this.airportName = optionsData.arrive_address || '';
+      		this.arrivalDate = optionsData.arrive_time || '';
+
+      		this.ic_name = orderItems.ic_name || '';
+      		this.ic_card = orderItems.ic_card || '';
+      		this.mobile = orderItems.mobile || '';
+      		this.email = orderItems.email || '';
         },
         data: function() {
 
@@ -67,7 +78,7 @@ var _default = (function() {
         	goInfoCkeck: function(){
         		var vm = this;
 			    // 验证行程信息是否完善
-			    if (vm.statementCheck){
+			    if (vm.statementChecks){
 			      	if (vm.flightNumber && vm.airportName && vm.arrivalDate){
 				        // 验证姓名是否是中英文
 				        if ((/^[\u4E00-\u9FA5A-Za-z]+$/.test(vm.ic_name))) {
@@ -85,21 +96,19 @@ var _default = (function() {
 							                'email': vm.email,
 							                'price': vm.totalPrice
 						        		})
-										Utils.Axios.deferPost('/bank/wei/order/convert_goods', {
-						        		 	'total_price': vm.totalPrice, // 总价
+					                  	var userInfo = {
+					                  		'total_price': vm.totalPrice, // 总价
 								            'flight_number': vm.flightNumber,
 								            'arrive_address': vm.airportName,
 								            'arrive_time': vm.arrivalDate,
 								            'orders': order,
 								            'card_id': vm.cardId // 卡号ID
-						        		}, function(data){
-						        		 	console.log(data)
-						        		 	if(data.errcode == 0){
-						        		 		vm.$router.push('/return')
-						        		 	}else {
-						        		 		Toast.show(data.errdesc, 3000)
-						        		 	}
-						        		});
+					                  	}
+					                  	sessionStorage.setItem('order', order); // 存入一个值
+					                  	sessionStorage.setItem('userInfo', JSON.stringify(userInfo)); // 存入一个值
+					                  	
+					                  	vm.$router.push('/confirm');
+										
 			                		} else {
 			                  			Toast.show("请输入正确的证件号码",2000);
 			                		}
