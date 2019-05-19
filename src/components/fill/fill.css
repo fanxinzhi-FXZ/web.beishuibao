@@ -1,0 +1,321 @@
+.infoFill {
+	background: #f0f0f0;
+  padding-bottom: 58px;
+}
+.infoFill .title{
+  display: block;
+  height: 49px;
+  line-height: 49px;
+  text-align: left;
+  font-size: 15px;
+  color: #333333;
+  padding-left: 27px;
+  background: url("https://www.beishuibao.com/web_pic/program/icon_line.png") left 20px center no-repeat;
+  background-size: 2px 11px;
+}
+.infoFill .trip{
+  background: #ffffff;
+  padding-bottom: 12px;
+}
+.infoFill .item{
+  display: block;
+  height: 34px;
+  font-size: 12px;
+  color: #4d4d4d;
+  padding: 0px 17px 7px 20px;
+}
+.infoFill .item .subtitle{
+  float: left;
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+  text-align: left;
+}
+.infoFill .item .son{
+  float: left;
+  width: calc(100vw - 130px);
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+}
+.infoFill .item .son .input{
+  width: 233px;
+  height: 34px;
+  line-height: 34px;
+  margin-left: 14px;
+}
+.infoFill .item .son .datebg{
+  background: url("https://www.beishuibao.com/web_pic/program/information_icon_calendar.png") right 10px center no-repeat;
+  background-size: 15px 15px;
+}
+
+/* 旅客信息 */
+.infoFill .traveller {
+  display: block;
+  margin-top: 10px;
+  padding-bottom: 12px;
+  background: #ffffff;
+}
+.infoFill .traveller .header {
+  display: block;
+  height: 49px;
+}
+.infoFill .traveller .header .title{
+  float: left;
+  height: 49px;
+  line-height: 49px;
+  text-align:left;
+  font-size: 15px;
+  color:#333333;
+  padding-left: 27px;
+  background:url("https://www.beishuibao.com/web_pic/program/icon_line.png") left 20px center no-repeat;
+  background-size: 3px 11px;
+}
+.infoFill .traveller .header .add {
+  float: right;
+  height: 49px;
+  line-height: 49px;
+  color: #4d6ce3;
+  font-size: 12px;
+  padding: 0px 17px 0px 21px;
+  background:url("https://www.beishuibao.com/web_pic/program/icon_add.png") left center no-repeat;
+  background-size: 14px 14px;
+}
+.infoFill .traveller .header .delete {
+  float: right;
+  width:  49px;
+  height: 49px;
+  margin-right: 17px;
+  background:url("https://www.beishuibao.com/web_pic/program/icon_clocse.png") right center no-repeat;
+  background-size: 14px 14px;
+}
+.infoFill .traveller .plan {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  color: #4d4d4d;
+  padding: 0px 17px 7px 20px;
+}
+.infoFill .traveller .plan .subtitle{
+  float: left;
+  width: 88px;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+}
+.infoFill .traveller .plan .son{
+  float: left;
+  /*width: 497rpx;*/
+  height: 35px;
+}
+.infoFill .traveller .plan .son .seed{
+  float: left;
+  width: 77px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 6px;
+  border: 1rpx solid #e5e5e5;
+}
+.infoFill .traveller .plan .son .seed:first-child{
+  margin-left: 0px;
+}
+.infoFill .traveller .plan .son .select{
+  color: #4d6ce3;
+  border: 1px solid #4d6ce3;
+}
+
+.money-explain {
+  	display: block;
+  	margin-top: 10px;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	background: #ffffff;
+}
+.money-explain .ls{
+  	display: block;
+	font-size: 10px;
+	line-height: 20px;
+	color: #808080;
+  	margin: 0px 20px;
+}
+
+/* 电子合约 */
+.infoFill .contract {
+  margin-top: 10px;
+  background: #ffffff;
+  padding-bottom: 19px;
+}
+.infoFill .contract .con {
+  display: block;
+	font-size: 14px;
+	color: #4d6ce3;
+  margin: 0px 27px;
+}
+.infoFill .contract .span {
+  display: block;
+	font-size: 10px;
+	line-height: 20px;
+	color: #808080;
+  margin: 0px 27px;
+}
+
+/* 合约声明 */
+.infoFill .statement {
+  margin-top: 10px;
+  background: #ffffff;
+  padding-bottom: 19px;
+}
+.infoFill .statement .list {
+  display: block;
+  overflow: hidden;
+  margin: 0px 27px;
+}
+.infoFill .statement .list .seed{
+  float: left;
+  text-decoration: underline;
+	font-size: 14px;
+	line-height: 15px;
+	color: #4d6ce3;
+  padding-left: 10px;
+}
+.infoFill .statement .list .seed:first-child{
+  padding-left: 0px;
+}
+.infoFill .statement .illustrate {
+  display: block;
+	font-size: 8px;
+	line-height: 10px;
+	color: #8a8a8a;
+  padding: 7px 27px;
+}
+.infoFill .statement .uncheck{
+  display: block;
+  font-size: 12px;
+  color: #808080;
+  padding-left: 20px;
+  margin: 0px 27px;
+  background-image: url("https://www.beishuibao.com/web_pic/program/icon_clocse4_no.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 15px 15px; 
+}
+.infoFill .statement .check{
+  background-image: url("https://www.beishuibao.com/web_pic/program/icon_clocse4.png");
+}
+/* 合约说明 */
+.contract-explain {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 20;
+}
+.contract-explain .box{
+  position: absolute;
+  top: 30px;
+  bottom: 93px;
+  left: 26px;
+  right: 26px;
+  height: 480px;
+  border-radius: 11px;
+  background: #ffffff;
+}
+.contract-explain .box .sontitle {
+  display: block;
+  height: 56px;
+  line-height:56px;
+  text-align:center;
+  font-size: 18px;
+  color: #333333;
+}
+.contract-explain .content{
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  height: 390px;
+  overflow: auto;
+  padding: 0px 22px 20px 22px;
+}
+.contract-explain .box .content .name{
+  display: block;
+}
+.contract-explain .box .content .items{
+  display: block;
+}
+.contract-explain .box .content .items .subtitle{
+  display: block;
+}
+.contract-explain .box .content .items .text{
+  display: block;
+  line-height: 24px;
+}
+.contract-explain .box .hide {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 27px;
+  height: 27px;
+  background: url("https://www.beishuibao.com/web_pic/program/icon_clocse2.png") center center no-repeat;
+  background-size: 9px 9px;
+  z-index: 22;
+}
+
+/* 代理人手机号码 */
+.infoFill .agent {
+  margin-top: 10px;
+  background: #ffffff;
+  padding-bottom: 19px;
+}
+.infoFill .agent .agentphone {
+  display: block;
+  height: 34px;
+  font-size: 12px;
+  color: #4d4d4d;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  margin: 0px 27px;
+}
+.infoFill .agent .agentphone .input{
+  height: 34px;
+  line-height: 34px;
+  margin-left: 14px;
+}
+/* 底部按钮及金额 */
+.infoFill .bottom {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 48px;
+  background: #ffffff;
+  z-index: 10;
+}
+.infoFill .bottom .money{
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 24px;
+  font-size: 18px;
+  color: #4d6ce3;
+}
+.infoFill .bottom .text{
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  font-size: 13px;
+  color: #a6a6a6;
+}
+.infoFill .bottom .button{
+  float: right;
+  width: 154px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 17px;
+  background: #4d6ce3;
+}

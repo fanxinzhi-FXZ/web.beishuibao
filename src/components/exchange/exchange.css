@@ -12,4 +12,36 @@
 	background-size:2px 11px;
 
 }
- 
+#exchang .item {
+	display: block;
+	height: 60px;
+	border-bottom: 1px solid #C9C9C9;
+}
+#exchang .item .left {
+	float: left;
+	width: 80px;
+	padding-left: 30px;
+	height: 60px;
+	line-height: 60px;
+	text-align: left;
+	font-size: 14px;
+	color: #333333;
+}
+#exchang .item .right{
+	margin-top: 21px;
+}
+#exchang .item .text {
+	margin-top: 22px;
+}
+#exchang .bottom {
+	position: fixed;
+	left:0px;
+	right: 0px;
+	bottom: 0px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	background: #4d6ce3;
+	font-size: 15px;
+	color: #ffffff;
+}

@@ -90,7 +90,11 @@ textarea::-webkit-input-placeholder {
     display:block;
     height:1px;
 }
-
+input{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
 /*
 @keyframes headshake {
   0% { transform: rotate(0deg); }

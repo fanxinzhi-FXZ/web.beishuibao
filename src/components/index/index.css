@@ -1,0 +1,51 @@
+/* 常见问题 */
+.index .common {
+
+}
+.index .common .title{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  color: #333333;
+  padding: 0px 20px;
+  background: url("https://www.beishuibao.com/web_pic/program/icon_line.png") left 15px center no-repeat;
+  background-size: 2px 11px;
+}
+.index .common .content{
+  display: block;
+	background-color: #ffffff;
+	box-shadow: 1.5px 0px 14.5px 0px 
+		rgba(229, 229, 229, 0.63);
+	border-radius: 6px;
+  margin: 0px 10px;
+  padding: 6px 20px 20px 15px;
+}
+.index .common .content .item {
+  display: block;
+  padding-top: 18px;
+}
+.index .common .content .item .subtitle{
+  display: block;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #494949;
+  background: url("https://www.beishuibao.com/web_pic/program/icom_dot3.png") left center no-repeat;
+  background-size: 10px 10px;
+}
+.index .common .content .item .subtitle .num {
+  font-size: 14px;
+  display: inline;
+  color:#3756b4;
+}
+.index .common .content .item .text {
+  display: block;
+  padding-left: 15px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #494949;
+}
+.index .common .content .item .text .store{
+  font-weight: bold;
+  text-decoration: underline ;
+}

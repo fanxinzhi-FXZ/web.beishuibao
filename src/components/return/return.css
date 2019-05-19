@@ -1,0 +1,24 @@
+#return {
+	
+}
+#return .header{
+	padding: 65px 95px 40px 95px;
+	
+}
+#return .header img {
+	width: 100%;
+}
+#return .title {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	line-height: 25px;
+	color: #4d4d4d;
+}
+#return .subtitle {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	line-height: 25px;
+	color: #7ea3ff;
+}
