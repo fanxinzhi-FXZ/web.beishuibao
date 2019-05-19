@@ -29,7 +29,7 @@
 		<div class="nav-product">
 			<span class="title">
 				<var class="left">产品介绍</var>
-				<var class="right" bindtap="goDetail">详情了解</var>
+				<!--<var class="right" bindtap="goDetail">详情了解</var>-->
 			</span>
 			<div class="nav-product-swiper">
 				<swiper v-if="productData.length > 1" :options="swiperOptions_product">

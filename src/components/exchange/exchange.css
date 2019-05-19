@@ -40,6 +40,16 @@
 	height: 60px;
 	border-bottom: 1px solid #f0f0f0;
 }
+#exchang .verification .left {
+	float: left;
+	width: 80px;
+	padding-left: 30px;
+	height: 60px;
+	line-height: 60px;
+	text-align: left;
+	font-size: 15px;
+	color: #333333;
+}
 #exchang .verification .canvas{
 	float: right;
 	margin: 10px 20px 10px 10px;
@@ -47,8 +57,8 @@
 #exchang .verification .text {
 	font-size: 15px;
 	color: #333333;
-	width: calc(100vw - 170px);
-	margin: 22px 0px 0px 30px;
+	width: calc(100vw - 250px);
+	margin: 22px 0px 0px 0px;
 }
 #exchang .bottom {
 	position: fixed;
