@@ -20,7 +20,7 @@ var _default = (function() {
         	submit: function(){
         		var vm = this;
         		if(this.number && this.password){
-        			Utils.Axios.deferPost('/api/bank/wei/order/authentication_card', {
+        			Utils.Axios.deferPost('/bank/wei/order/authentication_card', {
 	        		 	'card_number' : this.number,  //
 	            		'card_pass' : this.password, //
 	        		}, function(data){

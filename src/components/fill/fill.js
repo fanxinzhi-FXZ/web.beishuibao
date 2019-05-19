@@ -85,7 +85,7 @@ var _default = (function() {
 							                'email': vm.email,
 							                'price': vm.totalPrice
 						        		})
-										Utils.Axios.deferPost('/api/bank/wei/order/convert_goods', {
+										Utils.Axios.deferPost('/bank/wei/order/convert_goods', {
 						        		 	'total_price': vm.totalPrice, // 总价
 								            'flight_number': vm.flightNumber,
 								            'arrive_address': vm.airportName,
