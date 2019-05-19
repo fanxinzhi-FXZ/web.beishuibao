@@ -4,7 +4,7 @@
  		 	<img src="http://www.beishuibao.com/web_pic/program/img_asc.jpg"/>
  		</div>
  		<span class="title">卡券已兑换成功</span>
- 		<span class="subtitle">3秒后将跳转商品详情</span>
+ 		<span class="subtitle">{{timeIndex}}秒后将跳转商品详情</span>
 	</div>
 </template>
 

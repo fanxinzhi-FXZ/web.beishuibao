@@ -14,8 +14,9 @@
 		    </span>
 		    <span class="item">
 		      	<var class="subtitle">回国到达日期</var>
+		      	<span class="son"><input class="input datebg"  v-model='arrivalDate' type="span" placeholder="请输入到达日期  如：2019-05-20"></input></span>
 		      	<!--<picker mode="date" v-model="arrivalDate" start="{{startDate}}" end="{{endDate}}">
-		        	<span class="son"><input class="input datebg" disabled="true" v-model='arrivalDate' type="span" placeholder="请选择到达日期"></input></span>
+		        	
 		     	</picker>-->
 		    </span>
 		</div>
@@ -67,7 +68,7 @@
 		      <span class="seed" @click="goFailUrl">合约声明</span>
 		    </span>
 		    <span class="illustrate"> 以上未尽事宜以您收到的合约及条款为准 </span>
-		    <span :class="statementCheck ? 'check uncheck' : 'uncheck'" @click="statementCheck">我已认真阅读以上内容并同意</span>
+		    <span :class="statementChecks ? 'check uncheck' : 'uncheck'" @click="statementCheck">我已认真阅读以上内容并同意</span>
 		  </div>
 		  <!-- 合约说明 -->
 		  <div class="contract-explain" v-if="contractExplainStatus">
@@ -87,7 +88,7 @@
 		  <!-- 代理人手机号码 -->
 		<div class="agent">
 		    <span class="title">代理人手机号码</span>
-		    <span class="agentphone"><input class="input" type="number" maxlength="11" placeholder="请输入代理人手机号码"></input></span>
+		    <span class="agentphone"><input class="input" type="number" maxlength="11" placeholder="请输入代理人手机号码" v-model="agentPhone" ></input></span>
 		</div>
 		
 		  <!-- 底部按钮及金额 -->
